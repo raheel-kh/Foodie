@@ -5,6 +5,6 @@ from random import choice
 # Create your views here.
 def index(request):
 
-    data = ["Apple", "cake", "Pie", "Pasta"]
+    data = ["Cake", "Juice", "Shake", "Pasta", "Pizza"]
     context = {"foods" : data}
     return render(request, "sandbox/index.html" , context)

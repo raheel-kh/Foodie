@@ -19,5 +19,7 @@ from django.urls import path , include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("sandbox.urls"))
+    path("sandbox/", include("sandbox.urls")),
+    path("", include("foodie_app.urls"))
+    
 ]
